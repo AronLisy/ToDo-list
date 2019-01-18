@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <title></title>
+  </head>
+
+
+  <body>
+    <div class="all">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <!-- HEADER -->
+          <div class="header col-12 col-md-10 col-lg-8">
+            <h1>Welcome</h1>
+            <h2>It is time to be productive!</h2>
+            <div class="timeBox">
+              <span id="time">time</span>
+            </div>
+          </div>
+
+          <!-- NAVIGATION -->
+          <div class="nav col-12 col-md-10 col-lg-8">
+            <ul>
+              <li><a href="#" id="about-anch">About</a></li>
+              <li><a href="#" id="tasks-anch">Tasks</a></li>
+              <li><a href="#" id="alarms-anch">Alarms</a></li>
+            </ul>
+          </div>
+
+          <!-- TASK LIST -->
+          <div class="content col-12 col-md-10 col-lg-8">
+
+            <div id="about">
+              <h3>What is this about?</h3>
+              <h4>This page is about one thing and that is productivity!</h4>
+              <p>I created this page for two reasons:</p>
+              <p><b>1)</b> I wanted to learn JavaScript. Working on a project is one of the best ways how to get better knowledge and some experience as well.<br>
+                <b>2)</b> I wanted to make a webpage that would help you focus on your tasks and make spend your time well.</p>
+              <p><b>Enjoy this page!</b></p>
+              <p class="footer">*If you have any feedback, feel free to contact me on aron.lisy@gmail.com</p>
+            </div>
+
+            <div id="tasks">
+              <h3>What are your tasks for today?</h3>
+              <ul id="todo"></ul>
+              <div id="fakeTaskWrapper">
+                <input id="taskWindow" type="text" placeholder="Enter task...">
+                <button id="saveTask" type="button" name="button">save</button>
+              </div>
+              <br>
+              <button type="button" class="buttons" id="taskInfoBtn">info</button>
+              <div id="taskInfo">
+                <p>Welcome to a task list. This is the main part of this page.</p>
+                <p>Are you sometimes overwhelmed by everything you need to do? Write down every little task and after each one press SAVE button or enter.</p>
+                <p>Once you copleted a task, simply click DONE button and the task will disappear from your life.</p>
+                <p>All tasks are saved in a local storage, so even if you exit web browser and than open this page again, they will be still here for you.</p>
+              </div>
+            </div>
+
+            <div id="alarms">
+              <h3>Alarms</h3>
+              <button type="button" class="buttons" id="addAlarmBtn">Add new alarm</button>
+              <ul id="alarmList">
+                <li class="alarmWrapper stative template">
+                  <span class="alarmTimeBox">00:00:00</span>
+                  <span class="timeOption">
+                    <select class="hour">
+                      <option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option>
+                    </select>
+                    <select class="minute">
+                      <option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+                    </select>
+                    <select class="second">
+                      <option value="0">00</option><option value="1">01</option><option value="2">02</option><option value="3">03</option><option value="4">04</option><option value="5">05</option><option value="6">06</option><option value="7">07</option><option value="8">08</option><option value="9">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option><option value="32">32</option><option value="33">33</option><option value="34">34</option><option value="35">35</option><option value="36">36</option><option value="37">37</option><option value="38">38</option><option value="39">39</option><option value="40">40</option><option value="41">41</option><option value="42">42</option><option value="43">43</option><option value="44">44</option><option value="45">45</option><option value="46">46</option><option value="47">47</option><option value="48">48</option><option value="49">49</option><option value="50">50</option><option value="51">51</option><option value="52">52</option><option value="53">53</option><option value="54">54</option><option value="55">55</option><option value="56">56</option><option value="57">57</option><option value="58">58</option><option value="59">59</option>
+                    </select>
+                  </span>
+                  <span class="note">#</span>
+                  <input type="text" class="noteInput" placeholder="Note...">
+                  <button type="button" class="deleteBtn">delete</button>
+                  <button type="button" class="changeBtn">change</button>
+                  <button type="button" class="saveBtn">save</button>
+                </li>
+              </ul>
+              <button type="button" class="buttons" id="alarmInfoBtn">info</button>
+              <div id="alarmInfo">
+                <p>This is an alarm list. By default there are no alarms.</p>
+                <p>By clicking ADD NEW ALARM button, you can add as many alarms you like. After creating new alarm, set hours, minutes and seconds. You can also add a message into input field. For example: "Take a break!" or "Get back to work!"</p>
+                <p>When the time is up, you will recieve message you wrote previously in a window and alarm sound will ring.</p>
+                <p>Alarms are not saved in local storage, therefore they are reset each time you close or refresh page.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="alarmModal" class="col-8 col-md-7 col-lg-6 col-xl-4">
+            <h4>Alarm</h4>
+            <span id="message">#</span><br>
+            <button type="button" id="modalBtn">ok</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- JAVASCRIP -->
+    <script src="js/main.js"></script>
+    <script src="js/tasks.js"></script>
+    <script src="js/alarms.js"></script>
+  </body>
+</html>
